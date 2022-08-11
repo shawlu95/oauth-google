@@ -16,10 +16,10 @@ passport.use(
   )
 );
 
-passport.serializeUser(function (user, done) {
-  done(null, user);
+passport.serializeUser(function (currentUser, done) {
+  done(null, currentUser);
 });
 
-passport.deserializeUser(function (user, done) {
-  done(null, user);
+passport.deserializeUser(function (currentUser, done) {
+  done(null, currentUser);
 });
